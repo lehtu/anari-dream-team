@@ -1,0 +1,74 @@
+.disabled {
+    /* change to grayscale */
+    filter: grayscale(100%);
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+    /* Set the desired width */
+}
+
+.child {
+    flex: 6 1 0;
+    /* Equal distribution of space */
+    text-align: center;
+    /* Optional: Center the content */
+    /* Optional: Add borders for visual separation */
+}
+
+.title-f {
+    flex: 3 1 0;
+    background: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    font-size: 0.8em;
+    color: #444;
+    padding: 0.25em 0em;
+}
+
+.title-d {
+    flex: 2 1 0;
+    background: #CCC;
+    border-bottom: 1px solid #fff;
+    font-size: 0.8em;
+    color: #444;
+    padding: 0.25em 0em;
+}
+
+.title-g {
+    flex: 1 1 0;
+    background: #f1f1f1;
+    border-bottom: 1px solid #fff;
+    font-size: 0.8em;
+    color: #444;
+    padding: 0.25em 0em;
+}
+
+.f, .d, .g {
+    padding: 0.45em;
+    color: #222;
+    font-size: 0.75em;
+}
+
+.f { background: #f0f0f0; border-right: 1px solid #fff; }
+.d { background: #CCC; border-right: 1px solid #fff; }
+.g { background: #f1f1f1; }
+
+.child small {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dream-team {
+    background: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    padding: 0em 1em;
+}
+
+.dream-team h2 {
+    margin: 0;
+    padding: 0.5em;
+    color: #444;
+    text-align: center;
+}

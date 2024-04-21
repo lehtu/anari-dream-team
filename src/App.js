@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Teams from './Views/Teams';
+import Players from './Views/Players';
+import DreamTeams from './Views/DreamTeams';
 import './App.css';
 
 function App() {
+  const [username, setUsername] = useState('');
+  const [view, setView] = useState(4);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {view === 1 &&
+        <>
+          <h1>What is your name?</h1>
+          <label>Username:</label>
+          <input type="text" value={username} pattern="/[^a-zA-Z0-9]/{12}" onChange={e => setUsername(e.target.value.replace(/[^a-zA-Z0-9]/g, ''))} />
+          <button onClick={() => {setView(2)}}>Continue</button>
+        </>
+      }
+      {view === 2 &&
+        <>
+          <h1>Welcome, {username}!</h1>
+          <Teams />
+          <hr />
+          <button onClick={() => {setView(1)}}>Back</button>
+          <button onClick={() => {setView(3)}}>Next</button>
+        </>
+      }
+      {view === 3 &&
+        <>
+          <h1>Goodbye, {username}!</h1>
+          <Players />
+          <hr />
+          <button onClick={() => {setView(2)}}>Back</button>
+          <button onClick={() => {setView(4)}}>Next</button>
+        </>
+      }
+      {view === 4 &&
+        <>
+          <h1>Thank you, {username}!</h1>
+          <DreamTeams />
+          <hr />
+          <button onClick={() => {setView(3)}}>Back</button>
+          <button onClick={() => {setView(4)}}>Next</button>
+        </>
+      }
     </div>
   );
 }
