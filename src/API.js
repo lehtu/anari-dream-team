@@ -1,3 +1,5 @@
+const apiUri = process.env.NODE_ENV === 'production' ? 'https://api-web.nhle.com' : '.';
+
 export const API = {
     getSkatersByNationality: async (nationalityCode) => {
         const uri = `https://api.nhle.com/stats/rest/en/skater/bios?cayenneExp=seasonId=20232024 and gameTypeId=2 and nationalityCode="${nationalityCode}"&limit-1`;
@@ -36,7 +38,7 @@ export const API = {
         return result.standings;
     },
     getTeamRoster: async (teamAbbrev) => {
-        const uri = `/v1/roster/${teamAbbrev}/20232024`;
+        const uri = `${apiUri}/v1/roster/${teamAbbrev}/20232024`;
         const response = await fetch(uri);
         const result = await response.json();
 
@@ -45,7 +47,7 @@ export const API = {
         return result;
     },
     getStandings: async () => {
-        const uri = '/v1/standings/2024-04-17';
+        const uri = `${apiUri}/v1/standings/2024-04-17`;
         const response = await fetch(uri);
         const result = await response.json();
 
