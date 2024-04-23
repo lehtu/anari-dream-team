@@ -1,0 +1,53 @@
+name: Handler for Teams Added via Issues
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  issue_team_handler:
+    # This job only runs for issue comments
+    name: Issue opened
+    if: contains(github.event.issue.labels.*.name, 'my-anari-team')
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.step1.outputs.hadSuccess }}
+    steps:
+      - uses: actions/checkout@v3
+      - id: step1
+        run: |
+          cd .github/workflows
+          if node team-issue-validator.mjs
+          then
+            gh issue close ${{ github.event.issue.number }} --reason "completed"
+            echo "hadSuccess=true" >> "$GITHUB_OUTPUT"
+          else
+            gh issue comment ${{ github.event.issue.number }} --body "🥅🏒🚫 That's 2 minutes for tripping! You thought it's a good idea to submit illegal Team? Not on my watch! 😠"
+            echo "hadSuccess=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+  job2:
+    runs-on: ubuntu-latest
+    name: Save the Team
+    if: contains(needs.issue_team_handler.outputs.output1, 'true')
+    needs: issue_team_handler
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update teams.json
+        run: |
+          node .github/workflows/update_team_db.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+      - name: Commit new Team to teams.json
+        run: |
+          git config --global user.name 'team-issue-handler'
+          git config --global user.email 'lehtu@users.noreply.github.com'
+          git add .
+          git commit -am "Add a new team to teams.json"
+          git push
