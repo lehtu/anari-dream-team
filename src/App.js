@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const [username, setUsername] = useState('');
-  const [view, setView] = useState(4);
+  const [view, setView] = useState(3);
 
   return (
     <div className="App">
@@ -29,7 +29,7 @@ function App() {
       }
       {view === 3 &&
         <>
-          <h1>Goodbye, {username}!</h1>
+          
           <Players />
           <hr />
           <button onClick={() => {setView(2)}}>Back</button>

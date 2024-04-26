@@ -1,6 +1,6 @@
 // create component to fetch and display team data
 import React, { useState, useEffect } from 'react';
-import { API } from '../API';
+import { API } from '../API.mjs';
 import './Teams.css';
 
 export default function Teams() {
