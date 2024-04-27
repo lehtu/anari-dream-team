@@ -55,9 +55,15 @@
 .g { background: #f1f1f1; }
 
 .child small {
-    color: red;
+    color: #888;
+    font-size: 0.7em !important;
+    font-weight: none;
+}
+
+.child small.empty {
+    color: red !important;
     font-style: italic;
-    font-weight: bold;
+    font-size: 0.7em !important;
 }
 
 .dream-team {
@@ -85,3 +91,100 @@ tr.selected:hover {
 /* tr.disabled {
     text-decoration: line-through;
 } */
+
+#players {
+    width: 100%;
+}
+
+td {
+    padding: 0 0.5em;
+}
+
+th {
+    font-size: 0.8em;
+    padding: 0.1em 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a.team-ready {
+    color: default;
+    cursor: finger;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+a.team-not-ready {
+    color: #444;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+table {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #222;
+}
+
+tr.headline {
+    background-color: #444;
+    color: #fff;
+}
+
+.dream-team {
+    border-top: 3px solid #444;
+    border-bottom: 2px solid #222;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 1.5em;
+}
+
+.team-submit-github {
+    background: #f0f0f0;
+    border: 1px solid #444;
+    color: #444;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.team-submit-github svg {
+    fill: #444;
+    height: 1em;
+    margin-right: 0.5em;
+    width: 1em;
+    margin-bottom: -0.1em;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.teamsubmit {
+    justify-content: center;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.team-ready {
+    display: inline-block;
+    animation: wiggle 1s infinite;
+    box-shadow: 0 0 0.5em 0.2em red;
+}
+
+.team-ready:hover {
+    animation: none;
+}

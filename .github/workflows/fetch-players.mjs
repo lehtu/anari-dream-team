@@ -21,7 +21,6 @@ for (const teamAbbrev of teamAbbrevs) {
 }
 
 const playersWithStats = (await API.getAllPlayers()).filter(player => teamAbbrevs.includes(player.teamAbbrevs.split(',').slice(-1).shift()));
-console.log('playersWithStats', playersWithStats.length);
 
 const positions = {
     'L': 'Left Wing',
@@ -48,11 +47,5 @@ Object.keys(players).forEach(role => {
         }
     });
 });
-
-// const playerId = 8480901;
-// const playerWithStats = playersWithStats.find(p => p.playerId === playerId);
-// const player = players.forwards.find(p => p.id === playerId);
-
-// console.log('playerWithStats vs. player', playerWithStats.playerId, player.id);
 
 fs.writeFileSync('src/players.json', JSON.stringify(players, null, 2));

@@ -26,6 +26,6 @@ try {
     process.exit(1);
 }
 
-const teams = JSON.parse(fs.readFileSync('public/teams.json', 'utf-8'));
+const teams = JSON.parse(fs.readFileSync('src/teams.json', 'utf-8'));
 teams.push(json);
-fs.writeFileSync('public/teams.json', JSON.stringify(teams, null, 2), 'utf-8');
+fs.writeFileSync('src/teams.json', JSON.stringify(teams, null, 2), 'utf-8');

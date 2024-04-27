@@ -1,0 +1,40 @@
+[
+    {
+        "forwards": [
+          {
+            "id": 8482157,
+            "fullName": "Will Cuylle",
+            "currentTeamAbbrev": "NYR"
+          },
+          {
+            "id": 8478449,
+            "fullName": "Roope Hintz",
+            "currentTeamAbbrev": "DAL"
+          },
+          {
+            "id": 8475744,
+            "fullName": "Evgeny Kuznetsov",
+            "currentTeamAbbrev": "CAR"
+          }
+        ],
+        "defensemen": [
+          {
+            "id": 8479372,
+            "fullName": "Josh Mahura",
+            "currentTeamAbbrev": "FLA"
+          },
+          {
+            "id": 8476891,
+            "fullName": "Matt Grzelcyk",
+            "currentTeamAbbrev": "BOS"
+          }
+        ],
+        "goalies": [
+          {
+            "id": 8479361,
+            "fullName": "Joseph Woll",
+            "currentTeamAbbrev": "TOR"
+          }
+        ]
+    }
+]

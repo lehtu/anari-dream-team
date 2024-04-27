@@ -6,45 +6,25 @@ import './App.css';
 
 function App() {
   const [username, setUsername] = useState('');
-  const [view, setView] = useState(3);
+  const [view, setView] = useState(1);
 
   return (
     <div className="App">
-      {view === 1 &&
-        <>
-          <h1>What is your name?</h1>
-          <label>Username:</label>
-          <input type="text" value={username} pattern="/[^a-zA-Z0-9]/{12}" onChange={e => setUsername(e.target.value.replace(/[^a-zA-Z0-9]/g, ''))} />
-          <button onClick={() => {setView(2)}}>Continue</button>
-        </>
-      }
-      {view === 2 &&
-        <>
-          <h1>Welcome, {username}!</h1>
-          <Teams />
-          <hr />
-          <button onClick={() => {setView(1)}}>Back</button>
-          <button onClick={() => {setView(3)}}>Next</button>
-        </>
-      }
-      {view === 3 &&
-        <>
-          
-          <Players />
-          <hr />
-          <button onClick={() => {setView(2)}}>Back</button>
-          <button onClick={() => {setView(4)}}>Next</button>
-        </>
-      }
-      {view === 4 &&
-        <>
-          <h1>Thank you, {username}!</h1>
+      <header>
+        <h1>🏒 NHL PLayoff: Dream Team Challenge 🏆</h1>
+        {view == 1 && <button onClick={() => setView(2)}>join</button>}
+      </header>
+      <main>
+        {view === 1 &&
           <DreamTeams />
-          <hr />
-          <button onClick={() => {setView(3)}}>Back</button>
-          <button onClick={() => {setView(4)}}>Next</button>
-        </>
-      }
+        }
+        {view === 2 &&
+          <Players />
+        }
+      </main>
+      <footer>
+        <span>Made by <a href="https://lehtuska.com" target="_blank">lehtuska</a> with <div className="heart">&hearts;</div></span>
+      </footer>
     </div>
   );
 }
