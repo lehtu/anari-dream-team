@@ -15,10 +15,18 @@ export default function Players() {
     const [playerNameFilter, setPlayerNameFilter] = useState('');
     const [hideDisabledTeams, setHideDisabledTeams] = useState(false);
 
+    const roles = [
+        'forwards',
+        'defensemen',
+        'goalies'
+    ];
+
     const handlePlayerClick = useCallback((key) => {
         if (!key) return;
 
         const myTeam = {...team};
+
+        const role = roles.find(role => players[role].find(player => player.id === key));
         const player = players[role].find(player => player.id === key);
 
         // if player is already in the team, remove it
@@ -89,23 +97,23 @@ export default function Players() {
             <div className="dream-team">
                 <div className="parent">
                     {team.forwards.concat(Array.from({ length: 3 - team.forwards.length }, () => null)).map(player => (
-                        <div key={player?.id} className={"child f" + (player?.id && ' selected')} onClick={() => handlePlayerClick(player?.id)}>
+                        <div key={player?.id} className={"child f " + (player?.id && 'selected')} onClick={() => handlePlayerClick(player?.id)}>
                             <small>forward</small>
                             {player?.currentTeamAbbrev ? <center><img width="100" src={player.headshot} /><br /></center> : <center><img width="100" src='https://assets.nhle.com/mugs/nhl/20232024/CAR/8480031.png' /><br /></center> }
                             {player?.currentTeamAbbrev && <img width="20" src={`https://assets.nhle.com/logos/nhl/svg/${player?.currentTeamAbbrev.toUpperCase()}_light.svg`} />}{player?.fullName || <small className="empty">empty</small>}
                         </div>
                     ))}
                     {team.defensemen.concat(Array.from({ length: 2 - team.defensemen.length }, () => null)).map(player => (
-                        <div key={player?.id} className={"child d" + (player?.id && ' selected')} onClick={() => handlePlayerClick(player?.id)}>
+                        <div key={player?.id} className={"child d " + (player?.id && 'selected')} onClick={() => handlePlayerClick(player?.id)}>
                             <small>defenseman</small>
                             {player?.currentTeamAbbrev ? <center><img width="100" src={player.headshot} /><br /></center> : <center><img width="100" src='https://assets.nhle.com/mugs/nhl/20232024/CAR/8480031.png' /><br /></center> }
                             {player?.currentTeamAbbrev && <img width="20" src={`https://assets.nhle.com/logos/nhl/svg/${player?.currentTeamAbbrev.toUpperCase()}_light.svg`} />}{player?.fullName || <small className="empty">empty</small>}
                         </div>
                     ))}
                     {team.goalies.concat(Array.from({ length: 1 - team.goalies.length }, () => null)).map(player => (
-                        <div key={player?.id} className={"child g" + (player?.id && ' selected')} onClick={() => handlePlayerClick(player?.id)}>
+                        <div key={player?.id} className={"child g " + (player?.id && 'selected')} onClick={() => handlePlayerClick(player?.id)}>
                             <small>goalie</small>
-                            {player?.currentTeamAbbrev ? <center><img width="100" src={player.headshot} /><br /></center> : <center><img width="100" src='https://assets.nhle.com/mugs/nhl/20232024/CAR/8480031.png' /><br /></center> }
+                            {player?.currentTeamAbbrev ? <center><img width="100" src={player.headshot} /><br /></center> : <center><img width="100" src='https://assets.nhle.com/mugs/nhl/20232024/VGK/8481520.png' /><br /></center> }
                             {player?.currentTeamAbbrev && <img width="20" src={`https://assets.nhle.com/logos/nhl/svg/${player?.currentTeamAbbrev.toUpperCase()}_light.svg`} />}{player?.fullName || <small className="empty">empty</small>}
                         </div>
                     ))}
