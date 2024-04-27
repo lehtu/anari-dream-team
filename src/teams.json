@@ -1,40 +1,154 @@
 [
-    {
-        "forwards": [
-          {
-            "id": 8482157,
-            "fullName": "Will Cuylle",
-            "currentTeamAbbrev": "NYR"
-          },
-          {
-            "id": 8478449,
-            "fullName": "Roope Hintz",
-            "currentTeamAbbrev": "DAL"
-          },
-          {
-            "id": 8475744,
-            "fullName": "Evgeny Kuznetsov",
-            "currentTeamAbbrev": "CAR"
-          }
-        ],
-        "defensemen": [
-          {
-            "id": 8479372,
-            "fullName": "Josh Mahura",
-            "currentTeamAbbrev": "FLA"
-          },
-          {
-            "id": 8476891,
-            "fullName": "Matt Grzelcyk",
-            "currentTeamAbbrev": "BOS"
-          }
-        ],
-        "goalies": [
-          {
-            "id": 8479361,
-            "fullName": "Joseph Woll",
-            "currentTeamAbbrev": "TOR"
-          }
-        ]
-    }
+  {
+    "id": 1,
+    "name": "Lost Vegas",
+    "forwards": [
+      {
+        "id": 8477380,
+        "fullName": "Jonny Brodzinski",
+        "currentTeamAbbrev": "NYR",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8477380.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8477380"
+      },
+      {
+        "id": 8476889,
+        "fullName": "Radek Faksa",
+        "currentTeamAbbrev": "DAL",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8476889.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8476889"
+      },
+      {
+        "id": 8477962,
+        "fullName": "Brendan Lemieux",
+        "currentTeamAbbrev": "CAR",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8477962.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8477962"
+      }
+    ],
+    "defensemen": [
+      {
+        "id": 8478055,
+        "fullName": "Gustav Forsling",
+        "currentTeamAbbrev": "FLA",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8478055.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8478055"
+      },
+      {
+        "id": 8475762,
+        "fullName": "Derek Forbort",
+        "currentTeamAbbrev": "BOS",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BOS/8475762.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8475762"
+      }
+    ],
+    "goalies": [
+      {
+        "id": 8476945,
+        "fullName": "Connor Hellebuyck",
+        "currentTeamAbbrev": "WPG",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476945.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/WPG_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8476945"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tampa Nay Lightning",
+    "forwards": [
+      {
+        "id": 8478550,
+        "fullName": "Artemi Panarin",
+        "currentTeamAbbrev": "NYR",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8478550.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8478550"
+      },
+      {
+        "id": 8478427,
+        "fullName": "Sebastian Aho",
+        "currentTeamAbbrev": "CAR",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8478427.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8478427"
+      },
+      {
+        "id": 8477933,
+        "fullName": "Sam Reinhart",
+        "currentTeamAbbrev": "FLA",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477933.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8477933"
+      }
+    ],
+    "defensemen": [
+      {
+        "id": 8480803,
+        "fullName": "Evan Bouchard",
+        "currentTeamAbbrev": "EDM",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8480803.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8480803"
+      },
+      {
+        "id": 8480865,
+        "fullName": "Noah Dobson",
+        "currentTeamAbbrev": "NYI",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8480865.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/NYI_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8480865"
+      }
+    ],
+    "goalies": [
+      {
+        "id": 8480382,
+        "fullName": "Alexandar Georgiev",
+        "currentTeamAbbrev": "COL",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480382.png",
+        "teamLogo": {
+          "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+          "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+        },
+        "playerDetailsUrl": "https://www.nhl.com/player/8480382"
+      }
+    ]
+  }
 ]

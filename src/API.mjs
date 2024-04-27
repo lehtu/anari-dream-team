@@ -2,26 +2,25 @@
 const apiUri = 'https://api-web.nhle.com';
 
 export const API = {
-    getAllSkaters: async () => {
+    getAllSkaters: async (gameTypeId = 2) => {
         //const uri = `https://api.nhle.com/stats/rest/en/skater/bios?cayenneExp=seasonId=20232024 and gameTypeId=2&limit=-1&start=0`;
-        const uri = `https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22points%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22goals%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22assists%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22playerId%22,%22direction%22:%22ASC%22%7D%5D&start=0&limit=-1&cayenneExp=gameTypeId=2%20and%20seasonId%3C=20232024%20and%20seasonId%3E=20232024`;
+        const uri = `https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22points%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22goals%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22assists%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22playerId%22,%22direction%22:%22ASC%22%7D%5D&start=0&limit=-1&cayenneExp=gameTypeId=${gameTypeId}%20and%20seasonId%3C=20232024%20and%20seasonId%3E=20232024`;
         const response = await fetch(uri);
         const result = await response.json();
 
         return [...result.data];
     },
-    getAllGoalies: async () => {
+    getAllGoalies: async (gameTypeId = 2) => {
         //const uri = `https://api.nhle.com/stats/rest/en/goalie/bios?cayenneExp=seasonId=20232024 and gameTypeId=2&limit=-1&start=0`;
-        const uri = `
-        https://api.nhle.com/stats/rest/en/goalie/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22wins%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22savePct%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22playerId%22,%22direction%22:%22ASC%22%7D%5D&start=0&limit=-1&cayenneExp=gameTypeId=2%20and%20seasonId%3C=20232024%20and%20seasonId%3E=20232024`;
+        const uri = `https://api.nhle.com/stats/rest/en/goalie/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22wins%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22savePct%22,%22direction%22:%22DESC%22%7D,%7B%22property%22:%22playerId%22,%22direction%22:%22ASC%22%7D%5D&start=0&limit=-1&cayenneExp=gameTypeId=${gameTypeId}%20and%20seasonId%3C=20232024%20and%20seasonId%3E=20232024`;
         const response = await fetch(uri);
         const result = await response.json();
 
         return [...result.data];
     },
-    getAllPlayers: async () => {
-        const skaters = await API.getAllSkaters();
-        const goalies = await API.getAllGoalies();
+    getAllPlayers: async (gameTypeId = 2) => {
+        const skaters = await API.getAllSkaters(gameTypeId);
+        const goalies = await API.getAllGoalies(gameTypeId);
 
         return skaters.concat(goalies);
     },

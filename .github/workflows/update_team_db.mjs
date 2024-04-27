@@ -16,7 +16,10 @@ if (!json_string || json_string.length < 2 || !json_string[1])
     process.exit(1);
 
 const json = {
-    username: issue.title,
+    id: issue_number,
+    name: issue.title,
+    username: issue.user.login,
+    avatar: issue.user.avatar_url,
     team: null
 };
 
@@ -27,5 +30,10 @@ try {
 }
 
 const teams = JSON.parse(fs.readFileSync('src/teams.json', 'utf-8'));
-teams.push(json);
-fs.writeFileSync('src/teams.json', JSON.stringify(teams, null, 2), 'utf-8');
+if (!teams.find(team => team.username === issue.user.login)) {
+    teams.push(json);
+    fs.writeFileSync('src/teams.json', JSON.stringify(teams, null, 2), 'utf-8');
+} else {
+    console.log('Team already exists for username:', issue.user.login);
+    process.exit(1);
+}
