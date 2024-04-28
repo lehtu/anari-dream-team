@@ -28,8 +28,6 @@ function getTeamPoints(team) {
 }
 
 export default function DreamTeams() {
-    const [loading, setLoading] = useState(true);
-    
     return (
         <div className="Teams">
         <h1><center>Leaderboard</center></h1>
@@ -44,7 +42,7 @@ export default function DreamTeams() {
             {teams.map(team => (
                 <tr key={team.id}>
                     <td>{team.name}</td>
-                    {team.forwards.map(player => (
+                    {team.team.forwards?.map(player => (
                         <td key={player.id} align="center">
                             <img width="50" src={player.headshot} /><br />
                             <img width="20" src={player.teamLogo.light} />
@@ -52,7 +50,7 @@ export default function DreamTeams() {
                         </td>
                     ))}
 
-                    {team.defensemen.map(player => (
+                    {team.team.defensemen?.map(player => (
                         <td key={player.id} align="center">
                             <img width="50" src={player.headshot} /><br />
                             <img width="20" src={player.teamLogo.light} />
@@ -60,14 +58,14 @@ export default function DreamTeams() {
                         </td>
                     ))}
 
-                    {team.goalies.map(player => (
+                    {team.team.goalies.map(player => (
                         <td key={player.id} align="center">
                             <img width="50" src={player.headshot} /><br />
                             <img width="20" src={player.teamLogo.light} />
                             {player.fullName} {getGoaliePoints(player.id)}
                         </td>
                     ))}
-                    <td align='center'>{getTeamPoints(team)}</td>
+                    <td align='center'>{getTeamPoints(team.team)}</td>
                 </tr>
             ))}
         </table>
