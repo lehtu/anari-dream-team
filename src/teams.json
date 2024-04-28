@@ -318,5 +318,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "31",
+    "name": "Ainaheim Quacks",
+    "username": "jehna",
+    "avatar": "https://avatars.githubusercontent.com/u/2676795?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8478402,
+          "fullName": "Connor McDavid",
+          "currentTeamAbbrev": "EDM",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8478402.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478402"
+        },
+        {
+          "id": 8476453,
+          "fullName": "Nikita Kucherov",
+          "currentTeamAbbrev": "TBL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476453.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8476453"
+        },
+        {
+          "id": 8477492,
+          "fullName": "Nathan MacKinnon",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8477492.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477492"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8474600,
+          "fullName": "Roman Josi",
+          "currentTeamAbbrev": "NSH",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8474600.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NSH_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8474600"
+        },
+        {
+          "id": 8479323,
+          "fullName": "Adam Fox",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8479323.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8479323"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8477293,
+          "fullName": "Antti Raanta",
+          "currentTeamAbbrev": "CAR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8477293.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477293"
+        }
+      ]
+    }
   }
 ]
