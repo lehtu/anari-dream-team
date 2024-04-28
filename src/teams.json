@@ -78,5 +78,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "28",
+    "name": "Tampa Nay Lightnings",
+    "username": "lehtu",
+    "avatar": "https://avatars.githubusercontent.com/u/4471964?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8482157,
+          "fullName": "Will Cuylle",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8482157.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8482157"
+        },
+        {
+          "id": 8482740,
+          "fullName": "Wyatt Johnston",
+          "currentTeamAbbrev": "DAL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8482740.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8482740"
+        },
+        {
+          "id": 8480835,
+          "fullName": "Jack Drury",
+          "currentTeamAbbrev": "CAR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8480835.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480835"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8478055,
+          "fullName": "Gustav Forsling",
+          "currentTeamAbbrev": "FLA",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8478055.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478055"
+        },
+        {
+          "id": 8474574,
+          "fullName": "Tyler Myers",
+          "currentTeamAbbrev": "VAN",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8474574.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VAN_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8474574"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8481020,
+          "fullName": "Justus Annunen",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8481020.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8481020"
+        }
+      ]
+    }
   }
 ]
