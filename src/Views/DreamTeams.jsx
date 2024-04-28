@@ -10,6 +10,9 @@ function getSkaterPoints(playerId) {
 
 function getGoaliePoints(playerId) {
     const goalie = stats.find(player => player.playerId === playerId);
+    if (!goalie) {
+        return 0;
+    }
     return goalie.points + goalie.wins + goalie.gamesPlayed;
 }
 
