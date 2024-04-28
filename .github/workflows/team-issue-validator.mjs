@@ -2,7 +2,7 @@ console.log('process.env.ISSUE_NUMBER', process.env.ISSUE_NUMBER);
 console.log('process.env', process.env);
 
 const issue_number = process.env.ISSUE_NUMBER;
-const issue_url = `https://api.github.com/repos/lehtu/anari-dream-team/issues/${issue_number}?labels=my-anari-team`;
+const issue_url = `https://api.github.com/repos/lehtu/anari-dream-team/issues/${issue_number}`;
 
 const response = await fetch(issue_url);
 const issue = await response.json();
@@ -23,6 +23,11 @@ const json = {
 
 try {
     json.team = JSON.parse(json_string[1]);
+
+    if (json.team.forwards.length !== 3 || json.team.defensemen.length !== 2 || json.team.goalies.length !== 1) {
+        console.log('invalid player count');
+        process.exit(1);
+    }
 } catch (e) {
     process.exit(1);
 }

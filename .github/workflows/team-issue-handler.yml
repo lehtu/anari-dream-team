@@ -4,12 +4,12 @@ on:
   issues:
     types:
       - opened
+      - labeled
 
 jobs:
   issue_team_handler:
     # This job only runs for issue comments
     name: Issue opened
-    if: contains(github.event.issue.labels.*.name, 'my-anari-team')
     runs-on: ubuntu-latest
     outputs:
       output1: ${{ steps.step1.outputs.hadSuccess }}
