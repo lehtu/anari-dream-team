@@ -238,5 +238,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "30",
+    "name": "Saapunki HC",
+    "username": "saapunki",
+    "avatar": "https://avatars.githubusercontent.com/u/1532015?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8477493,
+          "fullName": "Aleksander Barkov",
+          "currentTeamAbbrev": "FLA",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477493.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477493"
+        },
+        {
+          "id": 8477956,
+          "fullName": "David Pastrnak",
+          "currentTeamAbbrev": "BOS",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BOS/8477956.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477956"
+        },
+        {
+          "id": 8476539,
+          "fullName": "Jonathan Marchessault",
+          "currentTeamAbbrev": "VGK",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8476539.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8476539"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8480036,
+          "fullName": "Miro Heiskanen",
+          "currentTeamAbbrev": "DAL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480036.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480036"
+        },
+        {
+          "id": 8480069,
+          "fullName": "Cale Makar",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480069.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480069"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8475883,
+          "fullName": "Frederik Andersen",
+          "currentTeamAbbrev": "CAR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8475883.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8475883"
+        }
+      ]
+    }
   }
 ]
