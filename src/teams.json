@@ -158,5 +158,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "29",
+    "name": "Miracles on ice",
+    "username": "lehtu",
+    "avatar": "https://avatars.githubusercontent.com/u/4471964?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8478550,
+          "fullName": "Artemi Panarin",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8478550.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478550"
+        },
+        {
+          "id": 8478427,
+          "fullName": "Sebastian Aho",
+          "currentTeamAbbrev": "CAR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8478427.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478427"
+        },
+        {
+          "id": 8478402,
+          "fullName": "Connor McDavid",
+          "currentTeamAbbrev": "EDM",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8478402.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478402"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8480800,
+          "fullName": "Quinn Hughes",
+          "currentTeamAbbrev": "VAN",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8480800.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VAN_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480800"
+        },
+        {
+          "id": 8480069,
+          "fullName": "Cale Makar",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480069.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480069"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8480313,
+          "fullName": "Logan Thompson",
+          "currentTeamAbbrev": "VGK",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VGK/8480313.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480313"
+        }
+      ]
+    }
   }
 ]
