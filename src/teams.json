@@ -238,5 +238,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "33",
+    "name": "The Nova Scotia Thunderbolts",
+    "username": "lehtu",
+    "avatar": "https://avatars.githubusercontent.com/u/4471964?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8477492,
+          "fullName": "Nathan MacKinnon",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8477492.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477492"
+        },
+        {
+          "id": 8477409,
+          "fullName": "Carter Verhaeghe",
+          "currentTeamAbbrev": "FLA",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477409.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477409"
+        },
+        {
+          "id": 8478402,
+          "fullName": "Connor McDavid",
+          "currentTeamAbbrev": "EDM",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8478402.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478402"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8480800,
+          "fullName": "Quinn Hughes",
+          "currentTeamAbbrev": "VAN",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8480800.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VAN_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480800"
+        },
+        {
+          "id": 8480036,
+          "fullName": "Miro Heiskanen",
+          "currentTeamAbbrev": "DAL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480036.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480036"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8478048,
+          "fullName": "Igor Shesterkin",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8478048.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478048"
+        }
+      ]
+    }
   }
 ]
