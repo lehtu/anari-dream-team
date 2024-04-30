@@ -44,7 +44,10 @@ export default function DreamTeams() {
             </tr>
             {teams.map(team => (
                 <tr key={team.id}>
-                    <td>{team.name}</td>
+                    <td>
+                        {team.name}<br />
+                        <small className="username">{team.username}</small>
+                    </td>
                     {team.team.forwards?.map(player => (
                         <td key={player.id} align="center">
                             <img width="50" src={player.headshot} /><br />
