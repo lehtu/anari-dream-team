@@ -45,7 +45,7 @@ export default function DreamTeams() {
                 <th align='center'>Goalie</th>
                 <th align='center'>Points</th>
             </tr>
-            {teams.sort().map((team, index) => (
+            {rankedTeams.map((team, index) => (
                 <tr key={team.id}>
                     <td>{index+1}.</td>
                     <td>
