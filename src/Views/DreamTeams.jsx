@@ -30,7 +30,7 @@ function getTeamPoints(team) {
     return points;
 }
 
-const rankedTeams = teams.map(team => ({...team, points: getTeamPoints(team.team)})).sort((a, b) => a.points - b.points);
+const rankedTeams = teams.map(team => ({...team, points: getTeamPoints(team.team)})).sort((a, b) => b.points - a.points);
 
 export default function DreamTeams() {
     return (
