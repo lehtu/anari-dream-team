@@ -558,5 +558,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "37",
+    "name": "Walla Walla Wombats",
+    "username": "esko",
+    "avatar": "https://avatars.githubusercontent.com/u/357912?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8478402,
+          "fullName": "Connor McDavid",
+          "currentTeamAbbrev": "EDM",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8478402.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478402"
+        },
+        {
+          "id": 8477409,
+          "fullName": "Carter Verhaeghe",
+          "currentTeamAbbrev": "FLA",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477409.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477409"
+        },
+        {
+          "id": 8473419,
+          "fullName": "Brad Marchand",
+          "currentTeamAbbrev": "BOS",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BOS/8473419.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8473419"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8476869,
+          "fullName": "Brady Skjei",
+          "currentTeamAbbrev": "CAR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8476869.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8476869"
+        },
+        {
+          "id": 8480069,
+          "fullName": "Cale Makar",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480069.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480069"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8478048,
+          "fullName": "Igor Shesterkin",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8478048.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478048"
+        }
+      ]
+    }
   }
 ]
