@@ -398,5 +398,85 @@
         }
       ]
     }
+  },
+  {
+    "id": "35",
+    "name": "Tepes",
+    "username": "arantala",
+    "avatar": "https://avatars.githubusercontent.com/u/6356852?v=4",
+    "team": {
+      "forwards": [
+        {
+          "id": 8478550,
+          "fullName": "Artemi Panarin",
+          "currentTeamAbbrev": "NYR",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8478550.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478550"
+        },
+        {
+          "id": 8477492,
+          "fullName": "Nathan MacKinnon",
+          "currentTeamAbbrev": "COL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8477492.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8477492"
+        },
+        {
+          "id": 8478402,
+          "fullName": "Connor McDavid",
+          "currentTeamAbbrev": "EDM",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8478402.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8478402"
+        }
+      ],
+      "defensemen": [
+        {
+          "id": 8480036,
+          "fullName": "Miro Heiskanen",
+          "currentTeamAbbrev": "DAL",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480036.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480036"
+        },
+        {
+          "id": 8480800,
+          "fullName": "Quinn Hughes",
+          "currentTeamAbbrev": "VAN",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8480800.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/VAN_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8480800"
+        }
+      ],
+      "goalies": [
+        {
+          "id": 8475683,
+          "fullName": "Sergei Bobrovsky",
+          "currentTeamAbbrev": "FLA",
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8475683.png",
+          "teamLogo": {
+            "light": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+            "dark": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg"
+          },
+          "playerDetailsUrl": "https://www.nhl.com/player/8475683"
+        }
+      ]
+    }
   }
 ]
