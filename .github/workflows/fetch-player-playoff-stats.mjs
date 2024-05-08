@@ -22,4 +22,4 @@ if (diffs === 0) {
     process.exit(1);
 }
 
-fs.writeFileSync('src/stats.json', JSON.stringify(playersWithStats, null, 2));
+fs.writeFileSync('../../src/stats.json', JSON.stringify(playersWithStats, null, 2));
