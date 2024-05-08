@@ -4,7 +4,7 @@ import fs from 'fs';
 const teamAbbrevs = (await API.getClinchedTeams()).map(team => team.teamAbbrev.default);
 const playersWithStats = (await API.getAllPlayers(3)).filter(player => teamAbbrevs.includes(player.teamAbbrevs.split(',').slice(-1).shift()));
 
-const currentStats = JSON.parse(fs.readFileSync('src/stats.json', 'utf8'));
+const currentStats = JSON.parse(fs.readFileSync('../../src/stats.json', 'utf8'));
 
 let diffs = 0;
 
